@@ -45,5 +45,5 @@ notifyBtn.addEventListener('click', function(event){
 
 ipc.on('targetPriceVal', function (event, arg){
     targetPriceVal = Number(arg)
-    targetPrice.innerHTML = '$'+targetPriceVal.toLocaleString('en')
+    targetPrice.innerHTML = 'Your Target Price is $'+targetPriceVal.toLocaleString('en')
 })

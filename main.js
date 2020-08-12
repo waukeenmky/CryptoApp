@@ -7,8 +7,8 @@ let win
 function createWindow () {
   // Create the browser window.
      win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 600,
+    height: 340,
     webPreferences: {
       nodeIntegration: true
     }
@@ -19,29 +19,8 @@ function createWindow () {
 
   // Open the DevTools.
   win.webContents.openDevTools()
-
-  var menu = Menu.buildFromTemplate([
-      {
-          label: 'Menu',
-          submenu: [
-              {label: 'Adjust Notification Value'},
-              {
-                label: 'Coin Market Cap',
-                click(){
-                    shell.openExternal('http://coinmarketcap.com')
-                 }
-               },
-               {type: 'separator'},
-              {
-                  label: 'Exit',
-                  click(){
-                      app.quit();
-                  }
-              }
-          ]
-      }
-  ])
-  Menu.setApplicationMenu(menu);
+  Menu.setApplicationMenu(null)
+  
 }
 
 // This method will be called when Electron has finished
