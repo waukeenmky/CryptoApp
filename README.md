@@ -7,7 +7,7 @@ An application that can be used to monitor the changes in value of Bitcoin. It c
 ## Built With
 * ElectronJS
 * Axios
-= Electron Packager
+* Electron Packager
 * Javascript
 * CSS
 
