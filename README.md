@@ -37,6 +37,3 @@ Youtube Channel: DesignCourse
 Video Link: [https://www.youtube.com/watch?v=2RxHQoiDctI&t=3074s]
 
 ---
-
-## Screenshots
-
