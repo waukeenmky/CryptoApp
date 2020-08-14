@@ -2,6 +2,10 @@
 
 ![cryptoimage](https://user-images.githubusercontent.com/69509445/90061557-df16fa00-dd18-11ea-9279-f59cb5446fb1.png)
 
+Will show if value of BTC is rising or falling
+![updownfinal](https://user-images.githubusercontent.com/69509445/90254355-2ca87980-de75-11ea-8a85-9c69437a5ebe.png)
+
+
 An application that can be used to monitor the changes in value of Bitcoin. It can notify the user when the target value reaches current BTC value.
 
 ## Built With
