@@ -23,6 +23,7 @@ An application that can be used to monitor the changes in value of Bitcoin. It c
 ```
 3. Install NPM Packages
 ```bash
+    npm install
     npm install electron --save
     npm install axios
     npm install electron-packager --save
