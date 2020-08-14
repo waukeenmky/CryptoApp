@@ -10,6 +10,10 @@ var price = document.querySelector('h1')
 var targetPrice = document.getElementById('targetPrice')
 
 var targetPriceVal
+var priceHold
+
+const up = document.getElementById('up')
+const down = document.getElementById('down')
 
 const notification =  {
     title: 'BTC alert',
@@ -23,14 +27,35 @@ function getBTC(){
         const cryptos = res.data.BTC.USD
         price.innerHTML = '$'+cryptos.toLocaleString('en')
 
+    
+
+
+     
+
         if (targetPrice.innerHTML != '' && targetPriceVal < res.data.BTC.USD){
             const myNotification = new window.Notification(notification.title, notification)
         }
+
+        
+        if(priceHold < res.data.BTC.USD){
+            down.style.display = "none";
+            up.style.display = "block";
+           }
+        else if (priceHold > res.data.BTC.USD){
+            up.style.display = "none";
+            down.style.display = "block";
+        }
+
+
+        priceHold = res.data.BTC.USD
+       
     })
+
+  
 }
 
 getBTC()
-setInterval(getBTC, 10000)
+setInterval(getBTC, 3000)
 
 notifyBtn.addEventListener('click', function(event){
     const modalPath = path.join('file://', __dirname, 'add.html')

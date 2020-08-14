@@ -79,3 +79,18 @@ button{
     height: auto;
     width: 100%;
 }
+.arrowHolder{
+    width:20px;
+    /* background-color: red; */
+    align-content: center;
+}
+.arrowHolder img{
+    width:20px;
+    height: 20px;
+}
+#up{
+    display: none;
+}
+#down{
+    display: none;
+}
