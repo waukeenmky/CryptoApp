@@ -34,6 +34,7 @@ An application that can be used to monitor the changes in value of Bitcoin. It c
 ## Author Credits
 
 Youtube Channel: DesignCourse
+
 Video Link: [https://www.youtube.com/watch?v=2RxHQoiDctI&t=3074s]
 
 ---
